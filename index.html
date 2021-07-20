@@ -28,15 +28,15 @@
     <nav>
       <img src="./assets/logo.png" alt="Logo" />
       <ul>
-        <a href=""><i data-feather="user"></i>Sobre mim</a>
-        <a href=""><i data-feather="briefcase"></i>Serviços</a>
-        <a href=""><i data-feather="image"></i>Portfólio</a>
-        <a href=""><i data-feather="list"></i>Currículo</a>
-        <a href=""><i data-feather="send"></i>Contato</a>
+        <a href="#about-me"><i data-feather="user"></i>Sobre mim</a>
+        <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
+        <a href="#portfolio"><i data-feather="image"></i>Portfólio</a>
+        <a href="#curriculum"><i data-feather="list"></i>Currículo</a>
+        <a href="#contact"><i data-feather="send"></i>Contato</a>
       </ul>
     </nav>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <div class="container">
         <h1 class="title-green">Sobre mim</h1>
         <p>
@@ -54,7 +54,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <h1 class="title-purple">Serviços</h1>
       <div class="services-container">
         <div class="service-card">
@@ -77,7 +77,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h1 class="title-green">Portfólio</h1>
 
         <div class="portfolio-container">
@@ -129,6 +129,49 @@
       </div>
         </div>
     </section>
+
+    <section class="curriculum" id="curriculum">
+      <h1 class="title-green">Currículo</h1>
+
+      <div class="container">
+        <img class="curriculum-img" src="./assets/imagem.png" alt="Curriculum Image">
+        <div class="content">
+              <div class="curriculum-info">
+                  <span>Nome</span><b>Ítalo Covas</b>
+                  <span>Idade</span><b>19 anos</b>
+                  <span>Formação</span><b>FATEC Ribeirão Preto (cursando)</b>
+                  <span>Cidade</span><b>Ribeirão Preto - SP</b>
+                  <span>Telefone</span><b>(16) 99369-0944</b>
+                  <span>Email</span><b>italocovas@gmail.com</b>
+                  <span>Freelance</span><b>Disponível</b>
+                  <span>Exp</span><b>HTML, CSS, Javascript, VueJS</b>
+                  <span>Idiomas</span><b>Inglês (avançado) - Espanhol (básico)</b>
+
+
+              </div>
+              <a href="https://drive.google.com/file/d/1hr-TjWGeH5ae0Xgbv9aqSk2DKiw2RF3U/view?usp=sharing" target="_blank">
+              <button class="secondary-button">
+                <img src="./assets/save.svg" alt="Button Icon">
+                Baixe meu currículo completo
+              </button>
+              </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>Vamos trabalhar juntos?</h1>
+        <p>Se você gostou do meu trabalho e quer que eu tire sua ideia do papel ou faça parte do seu time, entre em contato comigo!</p>
+        <button onclick="window.open('https://wa.me/5516993690944')">Entre em contato</button>
+
+        <div class="social-media">
+          <a href="instagram.com/italocovas" target="_blank"><img src="./assets/Vector.png" alt="Instagram Logo"></a>
+          <a href="https://www.linkedin.com/in/italo-covas-7889271a5/" target="_blank"><img src="./assets/linkedin.png" alt="Linkedin Logo"></a>
+          <a href="https://wa.me/5516993690944" target="_blank"><img src="./assets/whatsapp.png" alt="Whatsapp Logo"></a>
+        </div>
+    </section>
+
+    <footer><p>Feito por Ítalo Covas - 2021</p></footer>
 
     <script>
       feather.replace();

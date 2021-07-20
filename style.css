@@ -7,12 +7,17 @@
     --green: #15CDCB;
     --bg-dark: #212226;
     --light-gray: #E0DEDE;
+    --medium-gray: #2F3034;
 
     --menu-height: 75px;
 }
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -23,6 +28,10 @@ html, body {
 body, button, input, select, textarea {
     font-family: 'Poppins', sans-serif;
     color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul {
@@ -55,6 +64,27 @@ button {
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.4s;
+}
+
+.secondary-button {
+    background: var(--medium-gray);
+    border: 1px solid var(--purple);
+    color: var(--green);
+    font-weight: bold;
+
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+}
+
+.secondary-button img {
+    margin-right: 15px;
 }
 
 .title-purple {
@@ -278,9 +308,76 @@ nav ul a svg {
     margin-left: 10px;
 }
 
+/* Currículo */
+
+.curriculum {
+    padding: 0 100px;
+    text-align: center;
+}
+
+.curriculum .container {
+    display: flex;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.curriculum .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    width: 100%;
+}
+
+.curriculum .container .content .curriculum-info {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-gap: 1rem;
+    margin-bottom: 50px;
+}
+
+/* Contato */
+
+.contact {
+    max-width: 700px;
+    margin: 150px auto 70px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contact h1 {
+    width: fit-content;
+    margin: 0 auto 40px;
+    background: -webkit-linear-gradient(#15CDCB, #5280E2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact button {
+    margin: 40px auto;
+}
+
+.contact .social-media {
+    max-width: 360px;
+    margin: 50px auto 0; 
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact .social-media a img:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.4s;
+}
 
 
+/* Footer */
 
+footer {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 /* Responsividade (media queries) */
 
@@ -335,6 +432,17 @@ nav ul a svg {
 
     .portfolio {
         height: 100%;
+    }
+
+    .curriculum .container {
+        flex-wrap: wrap;
+    }
+
+    .curriculum .container .curriculum-img {
+        display: block;
+        margin: 0 auto 50px;
+        width: 100%;
+        max-width: 520px;
     }
 }
 
@@ -401,5 +509,13 @@ nav ul a svg {
 
     .portfolio {
         margin: 100px 0 50px;
+    }
+
+    .curriculum {
+        padding: 0 20px;
+    }
+
+    .curriculum .container .content .curriculum-info {
+        padding: 0 15px;
     }
 }

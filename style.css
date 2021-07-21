@@ -500,6 +500,10 @@ footer {
         margin-top: 70px;
     }
 
+    .about-me .container {
+        margin-bottom: 90px;
+    }
+
     .services .services-container, .portfolio-container {
         padding: 0 20px;
     }
